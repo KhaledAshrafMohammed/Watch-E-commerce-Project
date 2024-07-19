@@ -1,6 +1,6 @@
 
 {
-    "CLASSIC": [
+    "classic": [
         {
             "id": 1,
             "name": "TISSOT PR 100",
@@ -142,7 +142,7 @@
             "desc": "Diameter:36 mm,Diamonds,316L stainless steel case with rose gold PVD coating,Swiss Quartz movement,Scratch-resistant sapphire crystal with antireflective coating,Mother-of-pearl dial","price": "$1907.91"
         }
     ],
-    "SPORT": [
+    "sport": [
         {
             "id": 21,
             "name": "TISSOT SEASTAR 1000 40MM",
@@ -284,7 +284,7 @@
             "desc": "Diameter:45 mm,Interchangeable quick release bracelet,316L stainless steel case,Swiss Quartz movement,Scratch-resistant sapphire crystal,Adjustable leather strap","price": "$3188.67"
         }
     ],
-    "TOUCH": [
+    "touch": [
         {
             "id":41,
             "name":"TISSOT T-TOUCH CONNECT SPORT",
@@ -406,7 +406,7 @@
             "price":"$2794.42"
         }
     ],
-    "POCKET": [
+    "pocket": [
         {
             "id":56,
             "name":"TISSOT SAVONNETTE",
@@ -488,7 +488,7 @@
             "price":"$1829.27"
         }
     ],
-    "GOLD": [
+    "gold": [
         {
             "id":66,
             "name":"TISSOT PRX POWERMATIC 80 STEEL AND 18K GOLD BEZEL",
