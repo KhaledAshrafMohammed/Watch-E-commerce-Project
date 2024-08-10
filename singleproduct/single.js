@@ -1,5 +1,16 @@
 window.onload = onLoadFunction();
 function onLoadFunction() {
+  if (getCookie("ActiveUser")) {
+  const Sign = document.getElementById("Sign In");
+  const userGreetings = document.getElementById("user");
+  userGreetings.textContent = `Hello ${getCookie("ActiveUser")}`;
+  Sign.textContent = "Logout";
+  Sign.setAttribute("onclick", "logout()");
+  Sign.removeAttribute("href");
+} else {
+  const user = document.getElementById("user");
+  user.textContent = "";
+}
   getCartQuantity();
     let mainimage = document.getElementById("main-img");
     let smallimage = document.getElementsByClassName("image");
@@ -44,12 +55,14 @@ function onLoadFunction() {
 function getCartQuantity() {
     let  cartItems = JSON.parse(localStorage.getItem("CartItems")) || [];
     let quantity = 0;
-    for (const key of cartItems) {
-      quantity += key.quantity;
+    let cartCount = window.document.getElementsByClassName("basket")[0];
+    if(cartItems.Length > 0) {
+        for (const key of cartItems) {
+            quantity += key.quantity;
+        }
     }
-    cartcount = window.document.getElementsByClassName("basket")[0];
-    cartcount.innerHTML += quantity;
-  }
+    cartCount.innerHTML += quantity;
+}
 function addToCart(evt) {
     quantityInput = window.document.getElementById("quantity-input");
     let itemData = evt.target;
