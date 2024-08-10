@@ -399,7 +399,7 @@ function checkLogIn() {
     if(activeUser) {
         signIn.textContent = "Logout";
         signIn.onclick = logout();
-        userGreeting.textContent = `Greetings ${activeUser}`;
+        userGreeting.textContent = `Hello ${activeUser}`;
         userAddress.value = userObj.address;
         userPhoneNumber.value = userObj.phone;
         username.value = userObj.username;
