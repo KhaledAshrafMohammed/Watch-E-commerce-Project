@@ -262,130 +262,6 @@ header {
         right: 2%;
     }
 }
-/* .nav-bar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 22px 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    background: inherit;
-    transition: all 0.5 ease;
-    -webkit-box-shadow: 0 0 10px #ddd;
-    -moz-box-shadow: 0 0 10px #ddd;
-    box-shadow: 0 0 10 px #ddd;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    padding: 0.25em;
-    border: 2px solid var(--text-color);
-    border-radius: 5px;
-    width: fit-content;
-}
-.logo i {
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 3px;
-}
-.logo span {
-    color: var(--text-color);
-    font-size: 1.7em;
-    font-weight: 600;
-}
-
-.navbar {
-    display: flex;
-}
-.navbar a {
-    color: var(--text-color);
-    font-size: 1.1em;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0px 30px;
-    transition: all 0.5s ease;
-}
-.navbar a:hover {
-    color: var(--main-color);
-}
-.navbar a.active {
-    color: var(--main-color);
-}
-.main {
-    display: flex;
-    align-items: center;
-}
-.main a {
-    margin-right: 25px;
-    margin-left: 10px;
-    color: var(--text-color);
-}
-.user {
-    display: flex;
-    align-items: center;
-}
-.user i {
-    color: var(--main-color);
-    font-size: 28px;
-    margin-right: 7px;
-}
-.main a:hover {
-    color: var(--main-color);
-}
-#menu-icon {
-    font-size: 35px;
-    color: var(--text-color);
-    cursor: pointer;
-    z-index: 10001;
-    display: none;
-}
-@media (max-width: 1280px) {
-    header {
-        padding: 14px 2%;
-        transition: 0.2s;
-    }
-    .navbar a {
-        padding: 5px 0;
-        margin: 0px 20px;
-    }
-}
-@media (max-width: 1090px) {
-    #menu-icon {
-        display: block;
-    }
-    .navbar {
-        position: absolute;
-        top: 100%;
-        right: 2%;
-        width: 270px;
-        height: 29vh;
-        background: var(--main-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 10px;
-        transition: all 0.5s ease;
-    }
-    .navbar a {
-        display: block;
-        margin: 12px 0;
-        padding: 0px 25px;
-        transition: all 0.5s ease;
-    }
-    .navbar a:hover {
-        color: var(--text-color);
-        transform: translateY(5px);
-    }
-    .navbar a.active {
-        color: var(--text-color);
-    }
-    .navbar.open {
-        right: 2%;
-    }
-} */
 /* ---------------------------- End header Style ---------------------------- */
 main {
     display: flex;
@@ -538,4 +414,50 @@ input[type = "email"] {
     border-radius: 0.125em;
     border: 1px solid #9c9c9c;
     width: 100%;
+}
+
+#msg-box {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(228, 228, 228);
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    animation: popUp 0.3s linear ;
+    top: 31%;
+    left: 39%;
+    /* margin: auto; */
+}
+#msg {
+    margin-top: 3em;
+    height: 34em;
+    font-size: 1.4em;
+}
+#close-msg-box {
+    margin: auto;
+    width: 100%;
+    color: var(--bg-color);
+    background-color: brown;
+    padding: 1em;
+    border-radius: .5em;
+}
+@keyframes popUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
