@@ -59,12 +59,12 @@ function getDetails(id) {
 function getCartQuantity() {
     let  cartItems = JSON.parse(localStorage.getItem("CartItems")) || [];
     let quantity = 0;
-    let cartCount = window.document.getElementsByClassName("basket")[0];
-    if(cartItems.Length > 0) {
+    let cartCount = window.document.getElementById("cart-count");    
+    if(cartItems.length > 0) {
         for (const key of cartItems) {
             quantity += key.quantity;
         }
     }
-    cartCount.innerHTML += quantity;
+    cartCount.textContent = quantity;
 }
 getCartQuantity();
