@@ -458,7 +458,23 @@ header {
     display: none;
   }
 }
+.price-container {
+  text-align: left; 
+  margin-top: 10px; 
+}
 
+.original-price {
+  color: #888; 
+  font-size: 1.5em; 
+  text-decoration: line-through; 
+  margin-right: 10px; 
+}
+
+.discount-price {
+  color: #ff0000; 
+  font-size: 2em;
+  font-weight: bold; 
+}
 /* End Landing */
 /* Start Footer */
 .spikes {
