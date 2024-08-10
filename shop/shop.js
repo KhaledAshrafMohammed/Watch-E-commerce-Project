@@ -1,3 +1,11 @@
+function getCookie(cName) {
+    let documentCookies = window.document.cookie;
+    let cookiesArray = documentCookies.split(";");
+    let te = cookiesArray.find((ele) => {
+        return ele.startsWith(cName);
+    })
+    return te ? te.split("=")[1] : "";
+}
 if (getCookie("ActiveUser")) {
   const Sign = document.getElementById("Sign In");
   const userGreetings = document.getElementById("user");
