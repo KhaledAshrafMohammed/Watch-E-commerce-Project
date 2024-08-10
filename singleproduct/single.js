@@ -55,13 +55,13 @@ function onLoadFunction() {
 function getCartQuantity() {
     let  cartItems = JSON.parse(localStorage.getItem("CartItems")) || [];
     let quantity = 0;
-    let cartCount = window.document.getElementsByClassName("basket")[0];
-    if(cartItems.Length > 0) {
+    let cartCount = window.document.getElementById("cart-count");    
+    if(cartItems.length > 0) {
         for (const key of cartItems) {
             quantity += key.quantity;
         }
     }
-    cartCount.innerHTML += quantity;
+    cartCount.textContent = quantity;
 }
 function addToCart(evt) {
     quantityInput = window.document.getElementById("quantity-input");
@@ -82,6 +82,7 @@ function addToCart(evt) {
         });
     }
     localStorage.setItem("CartItems", JSON.stringify(cartItems));
+  getCartQuantity();
 }
 function increaseQuantity(evt) {
     let quantityInput = evt.target.localName == "i" ? evt.target.parentElement.previousElementSibling.children[1] : evt.target.previousElementSibling.children[1];
