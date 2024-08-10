@@ -20,12 +20,9 @@ function getCartQuantity() {
         for (const key of cartItems) {
             quantity += key.quantity;
         }
-        cartCount.innerHTML += quantity;
-    } else {
-        cartCount = 0;
     }
-    
-  }
+    cartCount.innerHTML += quantity;
+}
 
 /* ----------------------------- end toggle menu ---------------------------- */
 /* ------------------------------- start countries select ------------------------------ */
