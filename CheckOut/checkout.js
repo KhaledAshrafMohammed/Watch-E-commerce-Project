@@ -377,19 +377,38 @@ function getCartItems() {
             </div>`;
     }
 }
+function placeOrder(evt) {
+    let popUp = window.document.getElementById("msg-box");
+    let popUpMsg = window.document.getElementById("msg");
+    evt.preventDefault();
+    localStorage.setItem("CartItems", "[]");
+    popUp.style.display = "flex";
+    popUpMsg.textContent = `Your Order Was Submitted Successfully And We Will Contact You Soon`;
+}
+function closePopUp(evt) {
+    evt.target.parentElement.style.display = "none";
+}
 /* ------------------------------- end get items from local storage ------------------------------ */
 function checkLogIn() {
     let signIn = window.document.getElementById("Sign In");
     let userGreeting = window.document.getElementById("user");
     let activeUser = getCookie("ActiveUser");
+    let userObj = JSON.parse(localStorage.getItem("users")).find((ele) => ele.username == activeUser);
+    let userPhoneNumber = window.document.getElementById("phone");
+    let userAddress = window.document.getElementById("address");
+    let username = window.document.getElementById("username");
     if(activeUser) {
         signIn.textContent = "Logout";
         signIn.onclick = logout();
-        userGreeting.textContent = `Hello ${activeUser}`;
+        userGreeting.textContent = `Greetings ${activeUser}`;
+        userAddress.value = userObj.address;
+        userPhoneNumber.value = userObj.phone;
+        username.value = userObj.username;
     } else {
         userGreeting.textContent = "";
     }
 }
+
 function logout() {
     removeCookie("ActiveUser");
 }
