@@ -393,10 +393,28 @@ header {
   min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 }
 .landing .text {
   flex: 1;
+}
+
+.read-more {
+  background-color: var(--text-color); /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  margin-top: 10px; /* Space above the button */
+  
+}
+
+.read-more:hover {
+  background-color:var(--main-color); /* Darker blue on hover */
+  transition: var(--main-transition);
 }
 @media (max-width: 991px) {
   .landing .text {
