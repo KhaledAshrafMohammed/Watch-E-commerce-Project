@@ -142,8 +142,9 @@ function allwatch(event) {
                 caetgoryData = alldata[key]
                 for (let i = 0; i < caetgoryData.length; i++) {
                     let card = document.createElement("div")
+                    let watchId = caetgoryData[i].id;
                     card.addEventListener("click", function() {
-                        window.location = `../singleproduct/single.html?id=${caetgoryData[i].id}`;
+                        window.location = `../singleproduct/single.html?id=${watchId}`;
                     })
                     card.setAttribute("class", "card")
                     let fig = document.createElement("figure")
