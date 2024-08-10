@@ -10,17 +10,22 @@ window.onload = () => {
     setCountries();
     checkLogIn();
     getCartItems();
+    getCartQuantity();
 }
 function getCartQuantity() {
     let  cartItems = JSON.parse(localStorage.getItem("CartItems")) || [];
     let quantity = 0;
-    for (const key of cartItems) {
-      quantity += key.quantity;
+    let cartCount = window.document.getElementsByClassName("basket")[0];
+    if(cartItems.Length > 0) {
+        for (const key of cartItems) {
+            quantity += key.quantity;
+        }
+        cartCount.innerHTML += quantity;
+    } else {
+        cartCount = 0;
     }
-    cartcount = window.document.getElementsByClassName("basket")[0];
-    cartcount.innerHTML += quantity;
+    
   }
-getCartQuantity();
 
 /* ----------------------------- end toggle menu ---------------------------- */
 /* ------------------------------- start countries select ------------------------------ */
@@ -300,6 +305,7 @@ function increaseQuantity(evt) {
         }
     })
     localStorage.setItem("CartItems", JSON.stringify(itemsArray));
+    getCartQuantity();
 }
 function decreaseQuantity(evt) {
     let quantityInput = evt.target.localName == "i" ? evt.target.parentElement.nextElementSibling.children[1] : evt.target.nextElementSibling.children[1];
@@ -313,6 +319,7 @@ function decreaseQuantity(evt) {
         }
     })
     localStorage.setItem("CartItems", JSON.stringify(itemsArray));
+    getCartQuantity();
 }
 function removeItem(evt) {
     let itemDiv = evt.target.parentElement.parentElement;
@@ -326,6 +333,7 @@ function removeItem(evt) {
         counter++;
     });
     localStorage.setItem("CartItems", JSON.stringify(cartItemsArray));
+    getCartQuantity();
     itemDiv.nextElementSibling.remove();
     itemDiv.remove();
 }
@@ -380,7 +388,7 @@ function checkLogIn() {
     if(activeUser) {
         signIn.textContent = "Logout";
         signIn.onclick = logout();
-        userGreeting.textContent = `Greetings ${activeUser}`;
+        userGreeting.textContent = `Hello ${activeUser}`;
     } else {
         userGreeting.textContent = "";
     }
