@@ -1,4 +1,14 @@
-
+if (getCookie("ActiveUser")) {
+  const Sign = document.getElementById("Sign In");
+  const userGreetings = document.getElementById("user");
+  userGreetings.textContent = `Hello ${getCookie("ActiveUser")}`;
+  Sign.textContent = "Logout";
+  Sign.setAttribute("onclick", "logout()");
+  Sign.removeAttribute("href");
+} else {
+  const user = document.getElementById("user");
+  user.textContent = "";
+}
 function getCartQuantity() {
     let  cartItems = JSON.parse(localStorage.getItem("CartItems")) || [];
     let quantity = 0;
@@ -58,7 +68,6 @@ xhrrequest.onreadystatechange = function () {
     }
 }
 xhrrequest.send()
-let arr = [];
 function add_to_cart(evt) {
     let watchID = evt.target.id
     let watchData = caetgoryData.find(function (ele) { return ele.id == watchID; })
