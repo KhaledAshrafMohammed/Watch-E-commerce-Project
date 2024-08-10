@@ -388,22 +388,14 @@ header {
 } */
 /* ---------------------------- End header Style ---------------------------- */
 main {
-    /* margin: 10px; */
     display: flex;
     flex-direction: column;
-    /* border: 1px solid; */
-    /* background-color: rgb(107, 159, 173); */
-    /* background-color: #0d00ff; */
-    /* gap: 4em; */
 }
 .page-header {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 3em;
-    /* border: 1px solid; */
-    /* background-color: #ffffff; */
-    /* margin: 5px; */
 }
 .page-content {
     display: flex;
@@ -421,11 +413,6 @@ main {
     gap: 1em;
     padding: 1.5em;
     width: 58.75%;
-    /* align-items: center; */
-    /* border: 0.05em solid; */
-    /* margin: 5px; */
-    /* background-color: #9b1616; */
-    /* padding: 0.75em; */
 }
 .cart-container > span {
     font-weight: normal;
@@ -433,68 +420,42 @@ main {
 }
 .cart-container > hr {
     width: 100%;
-    /* align-self: center; */
 }
 .item {
     display: flex;
     padding: .75em;
     width: max-content;
     gap: 2em;
-    /* background-color: #b02392; */
-    /* border: 1px solid; */
-    /* margin: 5px; */
 }
 .img-figure {
     display: flex;
-    /* border: 1px solid; */
-    /* margin: 5px; */
-    /* background-color: #bcbf18; */
-    /* gap: 1em; */
-    /* padding: 5px; */
 }
 .item-img {
     width: 12.5em;
-    /* border: 1px solid; */
-    /* margin: 5px; */
-    /* background-color: rgb(87, 204, 128); */
 }
 .item-details {
     display: flex;
     flex-direction: column;
     gap: 0.25em;
     justify-content: center;
-    /* align-items: center; */
-    /* border: 1px solid; */
-    /* background-color: #ffffff; */
-    /* padding-inline: 5px; */
-    /* margin: 5px; */
 }
 .item-name {
     font-size: 20px ;
-    /* color: red; */
-    /* margin-top: 120%; */
-    /* padding-top: 50%; */
-    /* background-color: rgb(107, 59, 59); */
 }
 .item-category {
     text-transform: uppercase;
     cursor: pointer;
     width: fit-content;
-    /* color: blue; */
-    /* background-color: bisque; */
 }
 .item-price {
     color: gray;
     width: fit-content;
-    /* background-color: brown; */
 }
 .item-controls {
     display: flex;
     align-items: center;
     gap: .5em;
     padding: .75em;
-    /* margin: 5px; */
-    /* background-color: #c7c992; */
 }
 .item-quantity {
     border: 1px solid gray;
@@ -504,7 +465,6 @@ main {
     padding: 1px;
     padding-left: 0.25em;
     border-radius: 0.125em;
-    /* background-color: #9593c8; */
 }
 input[type = "text"]:hover,
 input[type = "tel"]:hover,
@@ -516,21 +476,11 @@ input[type = "email"]:hover,
 .remove-item:hover,
 .item-quantity:hover {
     border: 1px solid black;
-    /* background-color: red; */
 }
-/* .item-quantity span {
-    border: 1px solid;
-    background-color: #982979;
-    padding: 10px;
-    padding-bottom: 6px;
-    color: #787171;
-    font-weight: 400;
-} */
 .item-quantity input {
     padding: 0.5em;
     border: none;
     -moz-appearance: textfield;
-    /* background-color: aqua; */
 }
 .item-quantity input::-webkit-inner-spin-button,
 .item-quantity input::-webkit-outer-spin-button {
@@ -557,30 +507,19 @@ input[type = "email"]:hover,
     align-items: center;
     padding: 0.5em;
     justify-content: center;
-    /* background-color: rgb(65, 153, 83); */
-    /* border: 1px solid; */
-    /* margin: 0px; */
 }
 .delivery-details {
     display: flex;
     flex-direction: column;
     padding: 1.5em;
     gap: 1em;
-    width: 37.93%;
-    /* border: 1px solid; */
-    /* margin: 5px; */
-    /* background-color: rgb(111, 157, 99); */
-    /* justify-content: center; */
-    /* justify-items: center; */
-    /* align-items: center; */
+    width: 36.93%;
 }
 .delivery-details > span {
     font-weight: normal;
     font-size: 1.5em;
-    /* align-self: center; */
 }
 .delivery-details hr {
-    /* align-self: center; */
     width: 100%;
 }
 .delivery-details form{
@@ -589,14 +528,6 @@ input[type = "email"]:hover,
     align-items: start;
     gap: 1em;
     flex-wrap: wrap;
-    /* border: 1px solid #9c9c9c;
-    border-radius: 0em 1em; */
-    /* margin: 5px; */
-    /* padding: 5px; */
-    /* background-color: rgb(255, 255, 255); */
-    /* gap: 30px; */
-    /* align-items: baseline; */
-    /* overflow: scroll; */
 }
 #place-order,
 #country,
@@ -607,6 +538,4 @@ input[type = "email"] {
     border-radius: 0.125em;
     border: 1px solid #9c9c9c;
     width: 100%;
-    /* background-color: #9c9c9c; */
-    /* border: 1px solid; */
 }
