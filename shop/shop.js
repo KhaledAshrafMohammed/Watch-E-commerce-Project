@@ -141,7 +141,10 @@ function changeCategory(event) {
                 card.appendChild(fig)
                 card.appendChild(card_desc)
                 card.appendChild(a_link)
-                all_cards.appendChild(card)
+              all_cards.appendChild(card)
+              if (i == 6) {
+                console.log(caetgoryData[i].image1);
+              }
             }
         }
     }

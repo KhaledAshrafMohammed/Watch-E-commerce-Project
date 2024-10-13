@@ -51,7 +51,7 @@
         {
             "id": 7,
             "name": "TISSOT LE LOCLE POWERMATIC 80 20TH ANNIVERSARY",
-            "image1": "https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.11.033.03_R_1.png?im=Resize=(1200,1200)",
+            "image1": "https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.16.053.00_R.png?im=Resize=(1200,1200)",
             "image2": "https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.16.033.00_R_1.png?im=Resize=(387,387)",
             "desc": "Diameter:39.3 mm,Interchangeable quick release bracelet,Up to 80 hours power reserve,316L stainless steel case,See-through caseback,Swiss automatic movement,Scratch-resistant sapphire crystal",
             "price": "$1000.81"
@@ -598,6 +598,7 @@
             "id": 65,
             "name": "ROLEX-CLASS-A",
             "image1": "../shop/pngwing.com-removebg-preview.png",
+            "image2": "../shop/pngwing.com-removebg-preview.png",
             "desc": "Diameter:48.5 mm,316L stainless steel case,Swiss Quartz movement,Delivered with a chain",
             "price": "$4999.00"
         },
@@ -605,13 +606,15 @@
             "id": 75,
             "name": "ROLEX-B2",
             "image1": "../shop/featured4.png",
+            "image2": "../shop/featured4.png",
             "desc": "Diameter:45.2 mm,316L stainless steel case,Swiss Quartz movement,Delivered with a chain",
             "price": "$5000.00"
         },
         {
             "id": 76,
-            "name": "ROLEX-Demond-C",
+            "name": "ROLEX-Diamond-C",
             "image1": "../shop/pngwingBlack.com (3).png",
+            "image2": "../shop/pngwingBlack.com (3).png",
             "desc": "Diameter:48.5 mm,316L stainless steel case,Swiss Quartz movement,Delivered with a chain",
             "price": "$6000.00"
         },
@@ -619,6 +622,7 @@
             "id": 77,
             "name": "ROLEX-Class",
             "image1": "../shop/pngwingTHIRD.com (3).png",
+            "image2": "../shop/pngwingTHIRD.com (3).png",
             "desc": "Diameter:48.5 mm,316L stainless steel case,Swiss Quartz movement,Delivered with a chain",
             "price": "$4500.00"
         }

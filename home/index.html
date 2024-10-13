@@ -20,7 +20,7 @@
         >
         <ul class="navbar">
           <li><a href="" class="active">Home</a></li>
-          <li><a href="../shop/shop.html"">Shop</a></li>
+          <li><a href="../shop/shop.html">Shop</a></li>
           <li><a href="#discount-h2">Discount</a></li>
         </ul>
         <div class="main-nav">
@@ -29,8 +29,8 @@
             Sign In / Register</a
           >
           <a href="../CheckOut/checkout.html" class="basket"
-            ><i class="bx bxs-shopping-bag"></i
-          ><span id="cart-count"></span></a>
+            ><i class="bx bxs-shopping-bag"></i><span id="cart-count"></span
+          ></a>
         </div>
         <div id="menu-icon">
           <i class="bx bx-menu"></i>
@@ -57,7 +57,7 @@
     <div class="best-seller" id="best-seller">
       <h2 class="main-title">Best Seller</h2>
       <div class="container">
-        <div class="box" >
+        <div class="box">
           <img
             src="https://www.tissotwatches.com/media/catalog/product/T/1/T150.410.11.041.00_R.png?im=Resize=(1200,1200)"
             alt=""
@@ -71,7 +71,7 @@
             </p>
           </div>
           <div class="info">
-            <a href="">Read More</a>
+            <button onclick="getDetails(1)" class="read-more">Read More</button>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
@@ -89,7 +89,7 @@
             </p>
           </div>
           <div class="info">
-            <a href="">Read More</a>
+            <button onclick="getDetails(2)" class="read-more">Read More</button>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
@@ -107,7 +107,7 @@
             </p>
           </div>
           <div class="info">
-            <a href="">Read More</a>
+            <button onclick="getDetails(4)" class="read-more">Read More</button>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
@@ -124,13 +124,13 @@
             </p>
           </div>
           <div class="info">
-            <a href="">Read More</a>
+            <button onclick="getDetails(6)" class="read-more">Read More</button>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
         <div class="box">
           <img
-            src="https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.11.033.03_R_1.png?im=Resize=(1200,1200)"
+            src="https://www.tissotwatches.com/media/catalog/product/T/0/T006.407.16.053.00_R.png?im=Resize=(1200,1200)"
             alt=""
           />
           <div class="content">
@@ -142,7 +142,7 @@
             </p>
           </div>
           <div class="info">
-            <a href="">Read More</a>
+            <button onclick="getDetails(7)" class="read-more">Read More</button>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
@@ -160,7 +160,7 @@
             </p>
           </div>
           <div class="info">
-            <a href="">Read More</a>
+            <button onclick="getDetails(9)" class="read-more">Read More</button>
             <i class="fas fa-long-arrow-alt-right"></i>
           </div>
         </div>
@@ -214,11 +214,46 @@
         </div>
         <div class="box">
           <ul class="links">
-            <li><i class='bx bxl-linkedin-square'></i><a href="https://www.linkedin.com/in/khaled-ashraf-761b40221/" target="_blank">KhaledAshraf</a></li>
-            <li><i class='bx bxl-linkedin-square'></i><a href="https://www.linkedin.com/in/mahmoud-elsonbaty-2752b5229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">MahmoudElsonbaty</a></li>
-            <li><i class='bx bxl-linkedin-square'></i><a href="https://www.linkedin.com/in/mahmoud-homosany-804a78317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">MahmoudElhomosany</a></li>
-            <li><i class='bx bxl-linkedin-square'></i><a href="#"target="_blank">MohamedMady</a></li>
-            <li><i class='bx bxl-linkedin-square'></i><a href="https://www.linkedin.com/in/nada-ossama-59a907286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"target="_blank">NadaOssama</a></li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/khaled-ashraf-761b40221/"
+                target="_blank"
+                >KhaledAshraf</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/m-a-elsonbaty"
+                target="_blank"
+                >MahmoudElsonbaty</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/mahmoud-homosany-804a78317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                >MahmoudElhomosany</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/mohamed-mostafa-715454322/"
+                target="_blank"
+                >MohamedMady</a
+              >
+            </li>
+            <li>
+              <i class="bx bxl-linkedin-square"></i
+              ><a
+                href="https://www.linkedin.com/in/nada-ossama-59a907286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                >NadaOssama</a
+              >
+            </li>
           </ul>
           <p class="text">Designed with ❤️ by Team One🐱‍🚀</p>
         </div>
